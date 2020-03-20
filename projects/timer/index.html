@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timer</title>
+
+	<style type="text/css">
+		body {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 40em;
+			width: 88%;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Countdown Timer</h1>
+
+	<div id="app">
+		<form>
+			<input type="text" id="minutes" placeholder="minutes">
+			<input type="text" id="seconds" placeholder="seconds">
+			<input type="button" value="enter" id="submit">
+		</form>
+	</div>
+
+
+	<script>
+		// Project code...
+		let mInput = document.getElementsByTagName('input')[0];
+		let sInput = document.getElementsByTagName('input')[1];
+		let enter = document.getElementsByTagName('input')[2];
+		let header = document.getElementsByTagName('h1')[0];
+
+		let resetButton = document.createElement('button');
+		resetButton.textContent = "Reset";
+		resetButton.addEventListener('click', () => {
+			reset();
+		});
+
+		let reset = () => {
+			document.body.textContent = "";
+			let form = document.createElement('form');
+			form.appendChild(mInput);
+			form.appendChild(sInput);
+			form.appendChild(enter);
+
+			document.body.appendChild(header);
+			document.body.appendChild(form);
+		}
+
+		document.addEventListener('click', function(event){
+			if(!event.target.matches('#submit')){
+				return;
+			}
+			
+			let m = Number(mInput.value);
+			let s = Number(sInput.value);
+
+			if(isNaN(m) || isNaN(s) || m < 0 || s < 0 || m % 1 != 0 || s % 1 != 0){
+				console.log('Error: NaN');
+				alert('Enter in positive integer values');
+				mInput.value = "";
+				sInput.value = "";
+				return;
+			}
+
+			let countdown = document.createElement('div');
+
+			document.body.textContent = "";
+			
+			if(m < 10){
+				countdown.textContent = '0' + m;
+			} else{
+				countdown.textContent = m;
+			}
+			countdown.textContent += ':';
+			if(s < 10){
+				countdown.textContent += '0' + s;
+			} else{
+				countdown.textContent += s;
+			}
+			
+			document.body.appendChild(countdown);
+
+			let timer = setInterval(() => {
+				s--;
+				if(s < 0){
+					m--;
+					console.log(m);
+					if(m < 0){
+						console.log("stop");
+						document.body.textContent = "";
+						alert('Timer done!');
+						document.body.appendChild(resetButton);
+						clearInterval(timer);
+					}
+					s = 59;
+				}
+				if(m < 10){
+					countdown.textContent = '0' + m;
+				} else{
+					countdown.textContent = m;
+				}
+				countdown.textContent += ':';
+				if(s < 10){
+					countdown.textContent += '0' + s;
+				} else{
+					countdown.textContent += s;
+				}
+			}, 1000);
+
+			
+
+		}, false);
+
+		
+	</script>
+
+</body>
+</html>

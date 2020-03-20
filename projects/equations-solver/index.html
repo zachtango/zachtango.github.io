@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Tango</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" square="width=device-width, intiial-scale=1">
+		<meta name="description" content="Tang's everyday website">
+	</head>
+	
+	<body>
+		
+		<h5>Limited to systems with constant solutions</h5>
+		<!--- SYSTEM OF EQUATIONS INPUT --->
+		<table>
+			<form>
+				<tr>
+					<th>x1</th>
+					<th>x2</th>
+					<th>x3</th>
+					<th>RHS</th>
+				</tr>	
+				<tr>
+					<th><input type="text" class="eqn"></th>
+					<th><input type="text" class="eqn"></th>
+					<th><input type="text" class="eqn"></th>
+					<th><input type="text" class="eqn"></th>
+				</tr>
+				<tr>
+					<th><input type="text" class="eqn"></th>
+					<th><input type="text" class="eqn"></th>
+					<th><input type="text" class="eqn"></th>
+					<th><input type="text" class="eqn"></th>
+				</tr>
+				<tr>
+					<th><input type="text" class="eqn"></th>
+					<th><input type="text" class="eqn"></th>
+					<th><input type="text" class="eqn"></th>
+					<th><input type="text" class="eqn"></th>
+				</tr>
+				<input type="button" value="Submit" onclick="submitOnClick();">
+			</form>
+		</table>
+		
+		<!--- SOLUTION OUTPUT --->
+		<div>
+			<p id="soln"></p>
+		</div>
+		<script src="./scripts/main.js"></script>
+	</body>
+</html>

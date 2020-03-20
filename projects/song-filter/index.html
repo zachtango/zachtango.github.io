@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Template</title>
+
+	<style type="text/css">
+		body {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 40em;
+			width: 88%;
+		}
+	</style>
+</head>
+	<body>
+
+		<h1>Playlist Filters</h1>
+
+		<!-- Add filters here -->
+		<div id="filters"></div>
+
+		<ol id="playlist">
+			<li data-genre="pop" data-grammy="yes">"Thank U, Next" by Arianna Grande</li>
+			<li data-genre="hip-hop" data-grammy="yes">"Sicko Mode" by Travis Scott</li>
+			<li data-genre="rock" data-grammy="yes">"High Hopes" by Panic! at the Disco</li>
+			<li data-genre="pop" data-grammy="no">"Girls Like You" by Maroon 5</li>
+			<li data-genre="hip-hop" data-grammy="no">"Wow." by Post Malone</li>
+			<li data-genre="hip-hop" data-grammy="no">"Better Now" by Post Malone</li>
+			<li data-genre="hip-hop" data-grammy="no">"Money" by Cardi B</li>
+			<li data-genre="hip-hop" data-grammy="no">"Going Bad" by Meek Mill</li>
+			<li data-genre="pop" data-grammy="yes">"Shallow" by Lady Gaga</li>
+			<li data-genre="rock" data-grammy="no">"Natural" by Imagine Dragons</li>
+			<li data-genre="electronic" data-grammy="no">"Close to Me" by Ellie Goulding</li>
+			<li data-genre="country" data-grammy="yes">"She Got The Best Of Me" by Luke Combs</li>
+			<li data-genre="hip-hop" data-grammy="no">"A Lot" by 21 Savage</li>
+			<li data-genre="country" data-grammy="yes">"Beautiful Crazy" by Luke Combs</li>
+			<li data-genre="country" data-grammy="no">"Burning Man" by Dierks Bentley</li>
+			<li data-genre="hip-hop" data-grammy="no">"Backin' It Up" by Pardison Fontaine</li>
+			<li data-genre="country" data-grammy="yes">"Girl Like You" by Jason Aldean</li>
+			<li data-genre="pop" data-grammy="no">"Consequences" by Camila Cabello</li>
+			<li data-genre="hip-hop" data-grammy="yes">"Talk To Me" by Tory Lanez</li>
+			<li data-genre="hip-hop" data-grammy="yes">"No Stylist" by French Montana</li>
+			<li data-genre="hip-hop" data-grammy="yes">"Yosemite" by Travis Scott</li>
+			<li data-genre="rock" data-grammy="no">"Bad Liar" by Imagine Dragons</li>
+			<li data-genre="rock" data-grammy="no">"Get Up" by Shinedown</li>
+			<li data-genre="pop" data-grammy="yes">"Without Me" by Halsey</li>
+		</ol>	
+
+
+		<script>
+			// Project code...
+			let playlist = document.getElementById('playlist');
+			let songs = document.getElementsByTagName('li');
+			let genres = [];
+
+			for(let i = 0; i < songs.length; ++i){
+				//console.log(songs[i].getAttribute('data-genre'));
+				genres.push(songs[i].getAttribute('data-genre'));
+			}
+
+			let uniqueGenres = [];
+			genres.forEach((item, index) => {
+				if(uniqueGenres.indexOf(item) === -1){
+					uniqueGenres.push(item);
+				}
+			});
+			console.log(uniqueGenres);
+
+			let filters = document.getElementById('filters');
+			let form = document.createElement('form');
+			filters.appendChild(form);
+			uniqueGenres.forEach((item, index) => {
+				let container = document.createElement('div');
+				
+				let checkbox = document.createElement('input');
+				checkbox.setAttribute('type', 'checkbox');
+				checkbox.setAttribute('id', item + 'Box');
+				checkbox.setAttribute('name', 'genre');
+				checkbox.setAttribute('value', item);
+
+				let label = document.createElement('label');
+				label.innerHTML = item;
+				label.setAttribute('for', item + 'Box');
+
+				container.appendChild(checkbox);
+				container.appendChild(label);
+
+				form.appendChild(container);
+			});
+
+			let button = document.createElement('button');
+			button.setAttribute('type', 'submit');
+			button.setAttribute('class', 'button');
+			button.innerHTML = "Submit";
+			form.appendChild(button);
+
+			filters.appendChild(form);
+
+			let url;
+			window.onload = () => {
+				url = (new URL(window.location)).searchParams;
+				console.log(url);
+				let selectedGenres = url.getAll('genre');
+				
+				//console.log(selectedGenres);
+
+				if(selectedGenres.length === 0){
+					for(let i = 0; i < songs.length; ++i){
+						songs[i].style.display = 'block';
+					}
+					return;
+				}
+
+				for(let i = 0; i < songs.length; ++i){
+					songs[i].style.display = 'none';
+				}
+
+				selectedGenres.forEach((item, index) => {
+					for(let i = 0; i < songs.length; ++i){
+						if(item === songs[i].getAttribute('data-genre')){
+							console.log('display: ' +  songs[i].innerHTML);
+							songs[i].style.display = 'block';
+						}
+					}
+				});
+			}
+
+		</script>
+
+	</body>
+</html>
