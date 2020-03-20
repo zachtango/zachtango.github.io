@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /dummy.html
+
+Sitemap: https://google.com/
