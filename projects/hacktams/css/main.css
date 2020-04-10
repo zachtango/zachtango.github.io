@@ -109,7 +109,7 @@ body{
 
 .speaker-card{
     height: 350px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .speaker-img{
@@ -136,7 +136,7 @@ body{
 }
 
 #schedule{
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .date{
@@ -163,10 +163,38 @@ body{
     padding: 10px 0 10px 0;
 }
 
+/* stay updated */
+#stay-updated{
+    padding: 100px 100px 100px 150px;
+    background-color: rgb(173, 255, 215);
+}
+
+.stay-updated-card{
+    display: inline-block;
+
+    width: 45%;
+}
+
+
 /* organizers */
 #organizers-wrapper{
     padding: 100px 100px 100px 150px;
     text-align: center;
+}
+
+#organizers{
+    margin-top: 60px;
+}
+
+#organizers h3{
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+#organizers h5{
+    font-weight: normal;
+    margin-top: 8px;
+    color: rgb(105, 105, 105);
 }
 
 .organizer-card{
@@ -184,13 +212,9 @@ body{
     border-radius: 20px;
 }
 
-#organizers h3{
-    margin-bottom: 0;
-    font-weight: normal;
-}
-
-#organizers h5{
-    font-weight: normal;
-    margin-top: 8px;
-    color: rgb(105, 105, 105);
+/* footer */
+#footer{
+    margin-top: 60px;
+    text-align: center;
+    font-size: .5 em;
 }
