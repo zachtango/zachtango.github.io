@@ -82,6 +82,13 @@ body{
 }
 
 #signup-text{
+    display: block;
+    margin: 180px auto 0 auto;
+    padding: 20px 40px 20px 40px;
+    background-color: rgb(59, 223, 141);
+    border: none;
+    width: 140px;
+    border-radius: 10px;
     color: white;
     text-decoration: none;
     font-size: 1.5em;
