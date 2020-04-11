@@ -96,7 +96,7 @@ body{
 
 @media screen and (min-width: 300px) and (max-width: 500px){
     #main{
-        padding-top: 135px !important;
+        padding-top: 140px !important;
     }
     
     #main h1{
@@ -108,7 +108,7 @@ body{
     }
 
     #signup{
-        margin-top: 155px !important;
+        margin-top: 160px !important;
         width: 3.6em !important;
         font-size: 0.9em !important;
     }
