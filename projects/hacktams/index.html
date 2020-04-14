@@ -10,7 +10,8 @@
     </head>
 
     <body>
-        <ul id="nav">
+        <div id='particles-js'></div>
+        <ul id="nav" class='hidden'>
             <li id="liLogo"><img id="logo" src="./imgs/tamslogo.png" alt="TAMS logo" /><h2>HackTAMS</h2></li>
             <li id="end"><a href="#stay-updated">Contact Us</a></li>
             <li><a href="#organizers-wrapper">Organizers</a></li>
@@ -18,16 +19,18 @@
             <li><a href="#guest-speakers">Guest Speakers</a></li>
             <li><a href="#about">About</a></li>
         </ul>
-
-        <div id="main">
-            <h1 id="mainHeader">HackTAMS</h1>
-
-            <h2>April 17-19 2020 | Virtual Hackathon</h2>
+        
+        <div id='main'>
             
-            <a id="signup" href="https://forms.gle/rXGHehWwfSo1Y5k97">Sign Up</a>
+            
+                <h1 id="mainHeader">HackTAMS</h1>
+
+                <h2>April 17-19 2020 | Virtual Hackathon</h2>
+                
+                <a id="signup" href="https://forms.gle/rXGHehWwfSo1Y5k97">Sign Up</a>
             
         </div>
-
+        
         <div id="about">
             <h1>ABOUT</h1>
 
@@ -40,24 +43,14 @@
         </div>
 
         <div id="guest-speakers">
-            <h1>GUEST SPEAKERS</h1>
+            <h1>GUEST SPEAKER</h1>
 
             <div class="speaker-card first-card">
-                <img class="speaker-img" src="./imgs/johndoe.jpg" alt="John Doe" />
+                <img class="speaker-img" src="./imgs/alexander.jpeg" alt="Alexander Price" />
                 
                 <div class="speaker-info">
-                    <h3>John Doe</h3>
-                    <p>John Doe</p>
-                </div>
-               
-            </div>
-
-            <div class="speaker-card">
-                <img class="speaker-img" src="./imgs/johndoe.jpg" alt="John Doe" />
-                
-                <div class="speaker-info">
-                    <h3>John Doe</h3>
-                    <p>John Doe</p>
+                    <h3>Alexander Price</h3>
+                    <p>Software Engineer at Google and TAMS Alumni</p>
                 </div>
                
             </div>
@@ -72,17 +65,13 @@
                     <h3>Friday, April 17</h3>
                     
                     <ul class="times">
-                        <li>12:00 pm</li>
-                        <li>12:00 pm</li>
-                        <li>12:00 pm</li>
-                        <li>12:00 pm</li>
+                        <li>8:00 pm</li>
+                        <li>9:00 pm</li>
                     </ul>
 
                     <ul class="events">
-                        <li>Check-ins</li>
-                        <li>Check-ins</li>
-                        <li>Check-ins</li>
-                        <li>Check-ins</li>
+                        <li>Opening Ceremony (hacking starts)</li>
+                        <li>Slideshow Karaoke</li>
                     </ul>
                 </div>
 
@@ -90,17 +79,25 @@
                     <h3>Saturday, April 18</h3>
 
                     <ul class="times">
-                        <li>12:00 pm</li>
-                        <li>12:00 pm</li>
-                        <li>12:00 pm</li>
-                        <li>12:00 pm</li>
+                        <li>10:00 am</li>
+                        <li>11:30 pm</li>
+                        <li>2:00 pm</li>
+                        <li>3:00 pm</li>
+                        <li>3:30 pm</li>
+                        <li>7:00 pm</li>
+                        <li>8:00 pm</li>
+                        <li>9:00 pm</li>
                     </ul>
 
                     <ul class="events">
-                        <li>Check-ins</li>
-                        <li>Check-ins</li>
-                        <li>Check-ins</li>
-                        <li>Check-ins</li>
+                        <li>Github Workshop</li>
+                        <li>Web Dev Workshop, build and deploy your first website</li>
+                        <li>Intro to Python Skills for AI Workshop</li>
+                        <li>!Light Activity</li>
+                        <li>Scribbleio Activity</li>
+                        <li>Guest Speaker, Alexander Price from Google</li>
+                        <li>Hack the Technical Interview: Algorithms Workshop</li>
+                        <li>Pokemon Showdown</li>
                     </ul>
                 </div>
 
@@ -108,17 +105,15 @@
                     <h3>Sunday, April 19</h3>
 
                     <ul class="times">
-                        <li>12:00 pm</li>
-                        <li>12:00 pm</li>
-                        <li>12:00 pm</li>
+                        <li>12:00 am</li>
+                        <li>10:00 am</li>
                         <li>12:00 pm</li>
                     </ul>
 
                     <ul class="events">
-                        <li>Check-ins</li>
-                        <li>Check-ins</li>
-                        <li>Check-ins</li>
-                        <li>Check-ins</li>
+                        <li>Microsoft Paint with Bob Ross</li>
+                        <li>Submissions Due on Devpost</li>
+                        <li>Closing Ceremony</li>
                     </ul>
                 </div>
             </div>
@@ -142,43 +137,48 @@
             
             <div id="organizers">
                 <div class="organizer-card first">
-                    <div class="organizer-img">
-
+                    <div class="img-container">
+                        <img class="organizer-img" src='./imgs/ben.jpg' alt='Ben Wang' id='ben'/>
                     </div>
+
                     <h3>Ben Wang</h3>
-                    <h5>position</h5>
+                    <h5>President</h5>
                 </div>
 
                 <div class="organizer-card">
-                    <div class="organizer-img">
-
+                    <div class="img-container">
+                        <img class="organizer-img" src='./imgs/anthony.jpg' alt='Anthony Zhou' />
                     </div>
+
                     <h3>Anthony Zhou</h3>
-                    <h5>position</h5>
+                    <h5>Competitions Coordinator</h5>
                 </div>
 
                 <div class="organizer-card">
-                    <div class="organizer-img">
-
+                    <div class="img-container">    
+                        <img class="organizer-img" src='./imgs/jon.jpg' alt='Jon Choi'/>
                     </div>
+
                     <h3>Jon Choi</h3>
-                    <h5>position</h5>
+                    <h5>Volunteering Coordinator</h5>
                 </div>
 
                 <div class="organizer-card">
-                    <div class="organizer-img">
-
+                    <div class="img-container">    
+                        <img class="organizer-img" src='./imgs/michael.jpg' alt='Michael Zhao' id='michael'/>
                     </div>
+
                     <h3>Michael Zhao</h3>
-                    <h5>position</h5>
+                    <h5>Secretary</h5>
                 </div>
 
                 <div class="organizer-card">
-                    <div class="organizer-img">
-
+                    <div class='img-container'>    
+                        <img class="organizer-img" src='./imgs/pranoy.jpg' alt='Pranoy Dutta' />
                     </div>
+
                     <h3>Pranoy Dutta</h3>
-                    <h5>position</h5>
+                    <h5>Treasurer</h5>
                 </div>
             </div>
         </div>
@@ -188,6 +188,11 @@
             <p>HackTAMS is an event created and run by the Texas Academy of Math And Science Computer Science Organization</p>
             <p>Website provided by the TAMS CSO Web Development Committee</p>
         </div>
+
+        <script src='./scripts/particles.js'></script>
+        <script src='./scripts/main.js'></script>
+    
+        
     </body>
 
 </html>
