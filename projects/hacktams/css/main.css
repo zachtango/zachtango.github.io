@@ -18,7 +18,7 @@ body{
         font-size: 1.5em !important;
     }
 
-    #about, #guest-speakers, #schedule-wrapper, #stay-updated, #organizers-wrapper{
+    #about, #guest-speakers, #schedule-wrapper, #stay-updated, #organizers-wrapper, #faq{
         padding: 50px !important;
     }
 }
@@ -156,15 +156,9 @@ body{
 /* about */
 @media screen and (max-width: 870px){
     #about p{
-        width: 20.3em !important;
-        font-size: 0.9em !important;
-    }
-}
-
-@media screen and (min-width: 300px) and (max-width: 500px){
-    #about p{
-        min-width: 12em !important;
-        font-size: 0.63em !important;
+        max-width: 555.13px !important;
+        width: 100% !important;
+        min-width: 0 !important;
     }
 }
 
@@ -179,6 +173,32 @@ body{
     min-width: 28em;
     font-size: 1.24em;
     line-height: 1.8em;
+}
+
+/* faq */
+@media screen and (max-width: 870px){
+    #faq p{
+        max-width: 555.13px !important;
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+}
+
+#faq{
+    padding: 100px 100px 100px 150px;
+    background-color: rgb(226, 255, 239);
+}
+
+#faq p{
+    width: 45%;
+    min-width: 28em;
+    font-size: 1.24em;
+    line-height: 1.8em;
+}
+
+#faq h3{
+    font-size: 1.4em;
+    margin: 3em 0 0 0;
 }
 
 /* guest speakers */
@@ -229,7 +249,7 @@ body{
 
 #guest-speakers{
     padding: 100px 100px 100px 150px;
-    background-color: rgb(224, 255, 240);
+    background-color: rgb(212, 255, 234);
     text-align: center;
 }
 
@@ -238,8 +258,7 @@ body{
 }
 
 .speaker-card{
-    height: 350px;
-    margin-top: 60px;
+    height: 400px;
 }
 
 .speaker-card p{
