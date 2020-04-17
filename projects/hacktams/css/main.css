@@ -491,7 +491,6 @@ body{
     height: 250px;
     object-fit: cover;
     border-radius: 20px;
-    image-orientation: from-image !important;
 }
 
 /* footer */
