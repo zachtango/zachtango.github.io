@@ -458,15 +458,6 @@ body{
     }
 }
 
-@media (max-width: 767px) {
-    #ben, #michael{
-     -moz-transform:rotate(-90deg);
-    -webkit-transform:rotate(-90deg);
-    -ms-transform:rotate(-90deg);
-    transform: rotate(-90deg);   
-    }
-}
-
 #organizers-wrapper{
     padding: 100px;
     text-align: center;
@@ -500,6 +491,7 @@ body{
     height: 250px;
     object-fit: cover;
     border-radius: 20px;
+    image-orientation: from-image !important;
 }
 
 #ben{
