@@ -1,260 +1,396 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>HackTAMS</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="favicon.ico">
-        <link rel="stylesheet" type="text/css" href="./css/main.css" />
-    </head>
+<head>
+    <title>HackTAMS</title>
 
-    <body>
-        <div id='particles-js'></div>
-        <ul id="nav" class='hidden'>
-            <li id="liLogo"><a href="#main"><img id="logo" src="./imgs/tamslogo.png" alt="TAMS logo"/>
-            <h2>HackTAMS</h2></a>
-            </li>
-            <li id="end"><a href="#stay-updated">Contact Us</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#organizers-wrapper">Organizers</a></li>
-            <li><a href="#guest-speakers">Guest Speakers</a></li>
-            <li><a href="#schedule-wrapper">Schedule</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
-        
-        <div id='main'>
-                <h1 id="mainHeader">HackTAMS</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 
-                <h2>April 17-19 2020 | Virtual Hackathon</h2>
+</head>
+
+<body>
+    <div id='particles-js'></div>
+    <ul id="nav" class='hidden'>
+        <li id="liLogo"><a href="#main"><img id="logo" src="./imgs/tamslogo.png" alt="TAMS logo" />
+                <h2>HackTAMS</h2>
+            </a>
+        </li>
+        <li id="end"><a href="#stay-updated">Contact Us</a></li>
+        <li><a href="#organizers-wrapper">Organizers</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#guest-speakers">Guest Speakers</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#schedule-wrapper">Schedule</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <div id='main'>
+        <h1 id="mainHeader">HackTAMS</h1>
+
+        <h2>April 17-19 2020 | Virtual Hackathon</h2>
+
+        <a id="signup" href="https://forms.gle/rXGHehWwfSo1Y5k97">Sign Up</a>
+
+    </div>
+
+    <div id="about">
+        <h1>ABOUT</h1>
+
+        <p>HackTAMS will be split up into two different sections: <em>design-athon</em> and <em>hackathon</em>. The
+            design-athon is intended to allow anyone, including people who do not have any CS or engineering experience,
+            a chance to win!
+            All you have to do is come up with an amazing idea and design a simple flyer or website. What really counts
+            for this category is the idea and presentation/pitch.
+            There will be workshops where you can learn new skills, game events for everybody to relax and have fun,
+            guest speakers to share their experiences,
+            and guest judges from our wonderful TAMS staff! We hope to see you there and stay safe everyone!
+        </p>
+
+    </div>
+
+
+
+
+
+    <div id="schedule-wrapper">
+        <h1>SCHEDULE</h1>
+
+        <div id="schedule">
+            <div class="date" id="left-side-schedule">
+                <h3>Friday, April 17</h3>
+
+                <div class="schedule-item green">
+                    <div class="left">
+                        8:00 pm
+                    </div>
+                    <div class="right">
+                        Opening Ceremony (hacking starts)
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="left">
+                        9:00 pm
+                    </div>
+                    <div class="right">
+                        Slideshow Karaoke
+                    </div>
+                </div>
+
+
+                <h3>Saturday, April 18</h3>
+                <div class="schedule-item blue">
+                    <div class="left">
+                        9:00 am
+                    </div>
+                    <div class="right">
+                        EchoAR: Build better AR/VR/3D apps
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="left">
+                        10:00 am
+                    </div>
+                    <div class="right">
+                        Intro to GitHub
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="left">
+                        11:00 am
+                    </div>
+                    <div class="right">
+                        Web Dev Workshop, build and deploy your first website
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="left">
+                        12:00 am
+                    </div>
+                    <div class="right">
+                        !Light - Build a website without looking!
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="left">
+                        2:00 pm
+                    </div>
+                    <div class="right">
+                        Intro to Python Skills for AI Workshop
+                    </div>
+                </div>
+
+                <div class="schedule-item blue">
+                    <div class="left">
+                        3:00 pm
+                    </div>
+                    <div class="right">
+                        Dylan Macalinao: Product Management
+
+                    </div>
+                </div>
+
                 
-                <a id="signup" href="https://forms.gle/rXGHehWwfSo1Y5k97">Sign Up</a>
-            
-        </div>
-        
-        <div id="about">
-            <h1>ABOUT</h1>
-
-            <p>HackTAMS will be split up into two different sections: <em>design-athon</em> and <em>hackathon</em>. The design-athon is intended to allow anyone, including people who do not have any CS or engineering experience, a chance to win! 
-                All you have to do is come up with an amazing idea and design a simple flyer or website. What really counts for this category is the idea and presentation/pitch.
-                There will be workshops where you can learn new skills, game events for everybody to relax and have fun, guest speakers to share their experiences, 
-                and guest judges from our wonderful TAMS staff! We hope to see you there and stay safe everyone!
-            </p>
-
-        </div>
-
-
-
-
-
-        <div id="schedule-wrapper">
-            <h1>SCHEDULE</h1>
-
-            <div id="schedule">
-                <div class="date" id="friday">
-                    <h3>Friday, April 17</h3>
-                    
-                    <ul class="times">
-                        <li>8:00 pm</li>
-                        <li>9:00 pm</li>
-                    </ul>
-
-                    <ul class="events">
-                        <li>Opening Ceremony (hacking starts)</li>
-                        <li>Slideshow Karaoke</li>
-                    </ul>
-                </div>
-
-                <div class="date" id="saturday">
-                    <h3>Saturday, April 18</h3>
-
-                    <ul class="times">
-                        <li>10:00 am</li>
-                        <li>11:00 am</li>
-                        <li>12:00 pm</li>
-                        <li>2:00 pm</li>
-                        <li>3:00 pm</li>
-                        <li>4:00 pm</li>
-                        <li>5:30 pm</li>
-                        <li>6:00 pm</li>
-                        <li>7:00 pm</li>
-                        <li>8:00 pm</li>
-                        <li>9:00 pm</li>
-                    </ul>
-
-                    <ul class="events">
-                        <li>Github Workshop</li>
-                        <li>Web Dev Workshop, build and deploy your first website</li>
-                        <li>!Light Activity</li>
-                        <li>Intro to Python Skills for AI Workshop</li>
-                        <li>Guest Speaker, Dylan Macalinao</li>
-                        <li>Scribbleio Activity</li>
-                        <li>Guest Speaker, Jason He</li>
-                        <li>Guest Speaker, Paul Newton</li>
-                        <li>Guest Speaker, Alexander Price</li>
-                        <li>Hack the Technical Interview: Algorithms Workshop</li>
-                        <li>Pokemon Showdown</li>
-                    </ul>
-                </div>
-
-                <div class="date" id="sunday">
-                    <h3>Sunday, April 19</h3>
-
-                    <ul class="times">
-                        <li>12:00 am</li>
-                        <li>10:00 am</li>
-                        <li>12:00 pm</li>
-                    </ul>
-
-                    <ul class="events">
-                        <li>Microsoft Paint with Bob Ross</li>
-                        <li>Submissions Due on Devpost</li>
-                        <li>Closing Ceremony</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div id="guest-speakers">
-            <h1>GUEST SPEAKERS</h1>
-
-            <div class="speaker-card first-card">
-                <img class="speaker-img" src="./imgs/alexander.jpeg" alt="Alexander Price" />
-
-                <div class="speaker-info">
-                    <h3>Alexander Price from Google</h3>
-                    <p>Topics: Google Pay and UPI in India
-                    </p>
-                </div>
-
             </div>
 
-            <div class="speaker-card first-card">
-                <img class="speaker-img" src="./imgs/dylan.jpg" alt="Dylan Macalinao" />
-
-                <div class="speaker-info">
-                    <h3>Dylan Macalinao from OKCoin</h3>
-                    <p>Topic: Product Management</p>
-                </div>
-
-            </div>
-
-            <div class="speaker-card first-card">
-                <img class="speaker-img" src="./imgs/paul.jpg" alt="Paul Newton" />
-
-                <div class="speaker-info">
-                    <h3>Paul Newton from IBM</h3>
-                    <p>Topics: Mainframes and Master the Mainframe</p>
-                </div>
-
-            </div>
-
-            <div class="speaker-card first-card">
-                <img class="speaker-img" src="./imgs/jason.jpg" alt="Jason He" />
-
-                <div class="speaker-info">
-                    <h3>Jason He from HeartVista.AI</h3>
-                    <p>Topic: Magnetic ResonanCS, AI for Healthcare</p>
-                </div>
-
-            </div>
-        </div>
 
 
-
-
-        <div id='faq'>
-            <h1>FAQ</h1>
-            <h3>What is a hackathon?</h3>
-            <p>A hackathon is an event where you make something from scratch in a certain allotted time. It can be anything from hardware to machine learning. By participating in this event, you are able to develop your programming skills, and if you don't know how to program, learn how to code.
-            </p>
-            <h3>How long is this hackathon? How should I spend my time?</h3>
-            <p>This is a 36-hour hackathon. The event will start Friday evening and will end Sunday morning. Most people spend the first night coming up with ideas, participating in fun activities, and forming teams. On Saturday, hackers start to make their ideas functional. They also attend the numerous workshops that are planned throughout the day where hackers can learn new skills that might help them in their projects (Full schedule will be released soon). Lots of people work throughout the second night to get their projects finished. Sunday is for last-minute polish and recording the demo video. And congrats! You just finished a 36-hour hackathon!
-            </p>
-            <h3>Can I work in a team?</h3>
-            <p>Yes! You are able to work on a project as a team. Team sizes are capped at 4. If you want a team but don't have one, we will be providing a Discord channel where you can talk with other people who also want to form a team.</p>
-            <h3>What if I've never been to a hackathon before?</h3>
-            <p>Hackathons are a great place to learn and grow. We will be providing workshops throughout the event as well as support if you need it. Don't worry, there will be many other people who have never done a hackathon before. There will be a category just for beginners so you don't have to worry about competing against experienced hackers!</p>
-            <h3>Can I participate if I am an incoming junior?</h3>
-            <p>Yes! We encourage you to participate if you are an incoming junior in order to meet your classmates as well as your seniors. We will have a Discord channel dedicated to finding teammates once we can closer to the event.</p>
-            <h3>Are you offering prizes?</h3>
-            <p>Yes. They are <a href=' https://hacktamsspring2020.devpost.com/'>here</a></p>
-        </div>
-
-        <div id="stay-updated">
-            <h1>STAY UPDATED</h1>
-
-            <div id="stay-updated-links">
-                <a href="https://hacktamsspring2020.devpost.com/" target="_blank">See our Devpost for more info</a>
-                <br /><br /><br />
-                <a href="https://discord.gg/BGKCjSX" target="_blank">Join our Discord for updates</a>
-                <br /><br /><br />
-                <a href="mailto:tamscomputerscience@gmail.com">Contact us through email</a>
-            </div>
-        </div>
-
-        
-        <div id="organizers-wrapper">
-            <h1>ORGANIZERS</h1>
-            <p>Meet the team</p>
-            
-            <div id="organizers">
-                <div class="organizer-card first">
-                    <div class="img-container">
-                        <img class="organizer-img" src='./imgs/ben.jpg' alt='Ben Wang' id='ben'/>
+            <div class="date" id="right-side-schedule">
+                <div class="schedule-item">
+                    <div class="left">
+                        4:00 pm
                     </div>
-
-                    <h3>Ben Wang</h3>
-                    <h5>President</h5>
-                </div>
-
-                <div class="organizer-card">
-                    <div class="img-container">
-                        <img class="organizer-img" src='./imgs/anthony.jpg' alt='Anthony Zhou' />
+                    <div class="right">
+                        Scribbleio Activity
                     </div>
-
-                    <h3>Anthony Zhou</h3>
-                    <h5>Competitions Coordinator</h5>
                 </div>
 
-                <div class="organizer-card">
-                    <div class="img-container">    
-                        <img class="organizer-img" src='./imgs/jon.jpg' alt='Jon Choi'/>
+                <div class="schedule-item blue">
+                    <div class="left">
+                        5:30 pm
                     </div>
+                    <div class="right">
+                        Jason He: Magnetic ResonanCS: AI for Healthcare
 
-                    <h3>Jon Choi</h3>
-                    <h5>Volunteering Coordinator</h5>
-                </div>
-
-                <div class="organizer-card">
-                    <div class="img-container">    
-                        <img class="organizer-img" src='./imgs/michael.jpg' alt='Michael Zhao' id='michael'/>
                     </div>
-
-                    <h3>Michael Zhao</h3>
-                    <h5>Secretary</h5>
                 </div>
 
-                <div class="organizer-card">
-                    <div class='img-container'>    
-                        <img class="organizer-img" src='./imgs/pranoy.jpg' alt='Pranoy Dutta' />
+                <div class="schedule-item blue">
+                    <div class="left">
+                        6:00 pm
                     </div>
-
-                    <h3>Pranoy Dutta</h3>
-                    <h5>Treasurer</h5>
+                    <div class="right">
+                        Paul Newton: Mainframes and Master the Mainframe
+                    </div>
                 </div>
+
+                <div class="schedule-item blue">
+                    <div class="left">
+                        7:00 pm
+                    </div>
+                    <div class="right">
+                        Alexander Price: Google Pay and UPI in India
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="left">
+                        8:00 pm
+                    </div>
+                    <div class="right">
+                        Hack the Technical Interview: Algorithms Practice
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="left">
+                        9:00 pm
+                    </div>
+                    <div class="right">
+                        Pokemon Showdown Tournament
+                    </div>
+                </div>
+
+                <h3>Sunday, April 19</h3>
+                <div class="schedule-item">
+                    <div class="left">
+                        12:00 am
+                    </div>
+                    <div class="right">
+                        Microsoft Paint with Bob Ross
+                    </div>
+                </div>
+
+                <div class="schedule-item red">
+                    <div class="left">
+                        10:00 am
+                    </div>
+                    <div class="right">
+                        Submissions due on Devpost
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="left">
+                        12:00 pm
+                    </div>
+                    <div class="right">
+                        Closing ceremony
+                    </div>
+                </div>
+                
+                </div>
+        </div>
+    </div>
+
+    <div id="guest-speakers">
+        <h1>GUEST SPEAKERS</h1>
+
+        <div class="speaker-card first-card">
+            <img class="speaker-img" src="./imgs/alexander.jpeg" alt="Alexander Price" />
+
+            <div class="speaker-info">
+                <h3>Alexander Price from Google</h3>
+                <p>Topics: Google Pay and UPI in India
+                </p>
+            </div>
+
+        </div>
+
+        <div class="speaker-card first-card">
+            <img class="speaker-img" src="./imgs/dylan.jpg" alt="Dylan Macalinao" />
+
+            <div class="speaker-info">
+                <h3>Dylan Macalinao from OKCoin</h3>
+                <p>Topic: Product Management</p>
+            </div>
+
+        </div>
+
+        <div class="speaker-card first-card">
+            <img class="speaker-img" src="./imgs/paul.jpg" alt="Paul Newton" />
+
+            <div class="speaker-info">
+                <h3>Paul Newton from IBM</h3>
+                <p>Topics: Mainframes and Master the Mainframe</p>
+            </div>
+
+        </div>
+
+        <div class="speaker-card first-card">
+            <img class="speaker-img" src="./imgs/jason.jpg" alt="Jason He" />
+
+            <div class="speaker-info">
+                <h3>Jason He from HeartVista.AI</h3>
+                <p>Topic: Magnetic ResonanCS, AI for Healthcare</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="sponsors">
+        <h1>SPONSORS</h1>
+
+        <a target="_blank" href="https://www.echoar.xyz/"><img src="imgs/echoAR-logo.webp" alt="echoAR logo" /></a>
+
+    </div>
+
+    <div id='faq'>
+        <h1>FAQ</h1>
+        <h3>What is a hackathon?</h3>
+        <p>A hackathon is an event where you make something from scratch in a certain allotted time. It can be anything
+            from hardware to machine learning. By participating in this event, you are able to develop your programming
+            skills, and if you don't know how to program, learn how to code.
+        </p>
+        <h3>How long is this hackathon? How should I spend my time?</h3>
+        <p>This is a 36-hour hackathon. The event will start Friday evening and will end Sunday morning. Most people
+            spend the first night coming up with ideas, participating in fun activities, and forming teams. On Saturday,
+            hackers start to make their ideas functional. They also attend the numerous workshops that are planned
+            throughout the day where hackers can learn new skills that might help them in their projects (Full schedule
+            will be released soon). Lots of people work throughout the second night to get their projects finished.
+            Sunday is for last-minute polish and recording the demo video. And congrats! You just finished a 36-hour
+            hackathon!
+        </p>
+        <h3>Can I work in a team?</h3>
+        <p>Yes! You are able to work on a project as a team. Team sizes are capped at 4. If you want a team but don't
+            have one, we will be providing a Discord channel where you can talk with other people who also want to form
+            a team.</p>
+        <h3>What if I've never been to a hackathon before?</h3>
+        <p>Hackathons are a great place to learn and grow. We will be providing workshops throughout the event as well
+            as support if you need it. Don't worry, there will be many other people who have never done a hackathon
+            before. There will be a category just for beginners so you don't have to worry about competing against
+            experienced hackers!</p>
+        <h3>Can I participate if I am an incoming junior?</h3>
+        <p>Yes! We encourage you to participate if you are an incoming junior in order to meet your classmates as well
+            as your seniors. We will have a Discord channel dedicated to finding teammates once we can closer to the
+            event.</p>
+        <h3>Are you offering prizes?</h3>
+        <p>Yes. They are <a href=' https://hacktamsspring2020.devpost.com/'>here</a></p>
+    </div>
+
+    <div id="stay-updated">
+        <h1>STAY UPDATED</h1>
+
+        <div id="stay-updated-links">
+            <a href="https://hacktamsspring2020.devpost.com/" target="_blank">See our Devpost for more info</a>
+            <br /><br /><br />
+            <a href="https://discord.gg/BGKCjSX" target="_blank">Join our Discord for updates</a>
+            <br /><br /><br />
+            <a href="mailto:tamscomputerscience@gmail.com">Contact us through email</a>
+        </div>
+    </div>
+
+
+    <div id="organizers-wrapper">
+        <h1>ORGANIZERS</h1>
+        <p>Meet the team</p>
+
+        <div id="organizers">
+            <div class="organizer-card first">
+                <div class="img-container">
+                    <img class="organizer-img" src='./imgs/ben.jpg' alt='Ben Wang' id='ben' />
+                </div>
+
+                <h3>Ben Wang</h3>
+                <h5>President</h5>
+            </div>
+
+            <div class="organizer-card">
+                <div class="img-container">
+                    <img class="organizer-img" src='./imgs/anthony.jpg' alt='Anthony Zhou' />
+                </div>
+
+                <h3>Anthony Zhou</h3>
+                <h5>Competitions Coordinator</h5>
+            </div>
+
+            <div class="organizer-card">
+                <div class="img-container">
+                    <img class="organizer-img" src='./imgs/jon.jpg' alt='Jon Choi' />
+                </div>
+
+                <h3>Jon Choi</h3>
+                <h5>Volunteering Coordinator</h5>
+            </div>
+
+            <div class="organizer-card">
+                <div class="img-container">
+                    <img class="organizer-img" src='./imgs/michael.jpg' alt='Michael Zhao' id='michael' />
+                </div>
+
+                <h3>Michael Zhao</h3>
+                <h5>Secretary</h5>
+            </div>
+
+            <div class="organizer-card">
+                <div class='img-container'>
+                    <img class="organizer-img" src='./imgs/pranoy.jpg' alt='Pranoy Dutta' />
+                </div>
+
+                <h3>Pranoy Dutta</h3>
+                <h5>Treasurer</h5>
             </div>
         </div>
+    </div>
 
-        <div id="footer">
-            <p>HackTAMS is an event created and run by the Texas Academy of Math And Science Computer Science Organization</p>
-            <p>Website provided by the TAMS CSO Web Development Committee</p>
-        </div>
+    <div id="footer">
+        <p>HackTAMS is an event created and run by the Texas Academy of Math And Science Computer Science Organization
+        </p>
+        <p>Website provided by the TAMS CSO Web Development Committee</p>
+    </div>
 
-        <script src='./scripts/particles.js'></script>
-        <script src='./scripts/main.js'></script>
-    
-        
-    </body>
+    <script src='./scripts/particles.js'></script>
+    <script src='./scripts/main.js'></script>
+
+
+</body>
 
 </html>
