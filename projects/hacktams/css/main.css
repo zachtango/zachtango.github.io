@@ -494,14 +494,6 @@ body{
     image-orientation: from-image !important;
 }
 
-#ben{
-    transform: rotate(90deg);
-}
-
-#michael{
-    transform: rotate(-90deg);
-}
-
 /* footer */
 #footer{
     margin-top: 60px;
